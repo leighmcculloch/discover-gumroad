@@ -85,7 +85,7 @@ function addResult(url, imageUrl, title) {
   if (typeof imageUrl == 'undefined')
     return;
   var id = url.replace(/^https:\/\/gumroad.com\/l\//, '').replace(/([a-zA-Z0-9_-]+).*/, '$1');
-  $('.results').append('<a href="' + url + '" class="product ' + id + '"><div class="title">' + title + '</div></a>');
+  $('.results').append('<a href="' + url + '" class="product ' + id + '" target="_blank"><div class="title">' + title + '</div></a>');
   $('.results .product.' + id).css('background-image', 'url(' + imageUrl + ')');
 }
 
